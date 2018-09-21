@@ -8,7 +8,6 @@ public class FavoriteMovie {
 		System.out.println("A girl writes five letters to her crushes and her sister sends them out");
 		System.out.println("She ends up in a relationship with one of the guys");
 
-
 	}
 
 }
