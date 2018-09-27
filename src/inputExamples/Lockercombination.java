@@ -15,7 +15,7 @@ System.out.println("how old is your dad?");
 dadAge = input.nextInt();
 System.out.println("how old is your mom?");
 momAge = input.nextInt();
-System.out.println("your locker combination is " + age + " then " + dadAge + " and " + momAge + " at the end.");
+System.out.println("your locker combination is " + age + " then " + dadAge + "and " + momAge + " at the end.");
 	input.close();
 
 	}
