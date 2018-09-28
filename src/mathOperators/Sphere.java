@@ -11,7 +11,7 @@ public class Sphere {
 		Scanner input = new Scanner(System.in);
 		System.out.println("What is the radius of the sphere?");
 		radius = input.nextDouble();
-		area = radius * radius * radius * 4 * Math.PI / 3;
+		area = radius * radius * radius * Math.PI * 4.0/3.0;
 		System.out.println("The volume of the sphere is " + area);
 		input.close();
 	}
