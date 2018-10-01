@@ -25,6 +25,7 @@ public class MakeSomeChange {
 		System.out.println("You will get " + dimes + " dimes");
 		System.out.println("You will get " + nickels + " nickels");
 		System.out.println("You will get " + pennies + " pennies");
+		input.close();
 
 	}
 
