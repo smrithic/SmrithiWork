@@ -25,7 +25,7 @@ public class SandboxTestClass {
 		rate = input.nextInt();
 		volume = length * width * height;
 		hours = volume / rate;
-		bob.Sandprism(5, 6, 4, 10);
+		bob.Sandprism(length, width, height, rate);
 
 	}
 
