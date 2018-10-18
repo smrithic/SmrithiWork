@@ -22,13 +22,13 @@ public class Isosceles {
 	
 	public double perimeter() {
 		double perimeter = 0.0;
-		perimeter = leg + leg + base1;
+		perimeter = leg + base1 + base2 + height;
 		return perimeter;
 		
 	}
 	public double area() {
 		double area = 0.0;
-		area = base1 * height * 0.5;
+		area = ((base1 + base2)*height)/2;
 		return area;
 	}
 	
