@@ -12,6 +12,10 @@ public class Circle {
 		area = 19.8;
 
 	}
+	
+	public Circle(double newR, double newC, double newA) {
+		radius = 7.5;
+	}
 
 	public double getRadius() {
 		return radius;

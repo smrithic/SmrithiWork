@@ -10,6 +10,7 @@ bob.getCircumference();
 bob.getArea();
 System.out.println(bob.getArea());
 System.out.println(bob.getCircumference());
+Circle ball = new Circle(7.5, 3.5, 19.8);
 	}
 
 }
