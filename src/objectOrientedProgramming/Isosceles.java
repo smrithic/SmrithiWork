@@ -19,7 +19,18 @@ public class Isosceles {
 		newH = 6.0;
 		newL = 9.0;
 	}
-	
+	public double base1() {
+		return base1;
+	}
+	public double base2() {
+		return base2;
+	}
+	public double height() {
+		return height;
+	}
+	public double leg() {
+		return leg;
+	}
 	public double perimeter() {
 		double perimeter = 0.0;
 		perimeter = leg + base1 + base2 + height;
