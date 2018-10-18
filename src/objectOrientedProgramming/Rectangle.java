@@ -12,6 +12,10 @@ public class Rectangle {
 		area=15.75;
 		perimeter=16;
 	}
+	public Rectangle (double newLe, double newWi) {
+		length = 9.0;
+		width = 8.0;	
+	}
 
 	public double getLength() {
 		return length;

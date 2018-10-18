@@ -9,6 +9,10 @@ public Worker() {
 	hours = 4.5;
 	rate = 6.9;
 }
+public Worker(double hourss, double ratee) {
+	hourss = 9.0;
+	ratee = 0.56;
+}
 	public double getHours() {
 		return hours;
 	}

@@ -11,6 +11,7 @@ bob.getPerimeter();
 bob.getArea();
 System.out.println(bob.getPerimeter());
 System.out.println(bob.getArea());
+Rectangle geometry = new Rectangle(5.0, 4.0);
 	}
 
 }
