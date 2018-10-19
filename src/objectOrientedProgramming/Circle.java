@@ -1,35 +1,37 @@
 package objectOrientedProgramming;
 
 public class Circle {
-	private double radius = 0.0;
-	private double circumference = 0.0;
-	private double area = 0.0;
+	private double radius;
+	private double circumference;
+	private double area;
 	
 
 	public Circle() {
-		radius = 5.5;
-		circumference = 2.3;
-		area = 19.8;
+		
 
 	}
 	
-	public Circle(double newR, double newC, double newA) {
-		radius = 7.5;
+	public Circle(double newR) {
+		radius = newR;
+		
 	}
 
 	public double getRadius() {
-		return radius;
+		return area;
 	}
 
 	public double getCircumference() {
+		circumference = 2 * radius * Math.PI;
 		return circumference;
 	}
 	public double getArea() {
+		area = radius * radius * Math.PI;
 		return area;
 	}
 	
 	public void changeRadius(double newR) {
 		radius = newR;
 	}
+	
 
 }

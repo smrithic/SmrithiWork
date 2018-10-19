@@ -1,23 +1,20 @@
 package objectOrientedProgramming;
 
 public class Isosceles {
-	private double base1 = 0.0;
-	private double base2 = 0.0;
-	private double height = 0.0;
-	private double leg = 0.0;
+	private double base1;
+	private double base2;
+	private double height;
+	private double leg;
 
 	public Isosceles() {
-		base1 = 4.0;
-		base2 = 3.0;
-		height = 5.0;
-		leg = 7.0;
+		
 	}
 	
 	public Isosceles(double newB1, double newB2, double newH, double newL) {
-		newB1 = 5.0;
-		newB2 = 4.0;
-		newH = 6.0;
-		newL = 9.0;
+		base1 = newB1;
+		base2 = newB2;
+		height = newH;
+		leg = newL;
 	}
 	public double base1() {
 		return base1;
