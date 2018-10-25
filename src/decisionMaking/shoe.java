@@ -12,6 +12,7 @@ height = input.nextDouble();
 System.out.println("What is your shoe size?");
 length = input.nextDouble();
 System.out.println(height + length >= 26);
+System.out.println(height < 62 && height > 9);
 	}
 
 }
