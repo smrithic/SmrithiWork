@@ -15,6 +15,14 @@ if(age >= 18)
 }
 System.out.println("Have a nice day");
 
+int number;
+System.out.println("What is your guess for the number?");
+number = input.nextInt();
+if(number == 16)
+{
+	System.out.println("You won a singular dollar!");
+}
+System.out.println("good guess but WRONG");
 	}
 
 }
