@@ -29,7 +29,7 @@ if (age >= 50 && Math.abs(experience - 10.5)< 0.0000000001 && height > 80 ) {
 else {
 	System.out.println("You do not get a promotion.");
 }
-if (age < 50 && (height >= 70 || height <= 80)){
+if (age < 50 && (height >= 70 && height <= 80)){
 	System.out.println("You get a promotion!");
 }
 else {
