@@ -5,11 +5,10 @@ public class CircleTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Circle bob = new Circle();
-bob.changeRadius(3.5);
-bob.getCircumference();
-bob.getArea();
-System.out.println(bob.getArea());
-System.out.println(bob.getCircumference());
+bob.getRadius();
+bob.setRadius(18);
+System.out.println(bob.circumference());
+System.out.println(bob.area());
 	}
 
 }
