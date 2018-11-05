@@ -7,15 +7,14 @@ public class LoopOne {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		int count = 0;
-		int multiple;
-		int sum = 0;
-		System.out.println("Until what number should we do multiples of?");
-		multiple = input.nextInt();
-		while (count <= multiple) {
-			sum += count;
-			System.out.println(sum);
-			count = count + 2;
+		int number = 0;
+		int two;
+		while (number != 9999) {
+			System.out.println("Please enter a number");
+			number = input.nextInt();
+			two = number * 2;
+			System.out.println(two);
+			
 		}
 
 	}
