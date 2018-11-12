@@ -7,15 +7,32 @@ public class DoWhile1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		int number = 0;
-		final int MULTIPLY = 17;
+	
+		System.out.println("Please enter a number");
+		int number = input.nextInt();
+		
+		int highest = number;
+		int lowest = number;
+		
 		do {
-			int product = number * MULTIPLY;
-			System.out.println("Your magic number is " + product);
 			System.out.println("Please enter a number");
 			number = input.nextInt();
-		} 
-		while (number != 9999);
+			
+			if (number < lowest) 
+			{
+				lowest = number;
+			} 
+			
+			else 
+			{
+				
+				if (number > highest) 
+				{
+					highest = number;
+				} 
+			}
+			System.out.println(highest - lowest);
+		} while (Math.abs(number - 9999) < 0.001);
 
 		input.close();
 	}
