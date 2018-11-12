@@ -25,7 +25,7 @@ public class Circle {
 	}
 	public double circumference() {
 		if (radius > 0) {
-		double circumference = 2 * radius * Math.PI;
+		 circumference = 2 * radius * Math.PI;
 		}
 		else {
 			System.out.println("Bad data");
@@ -36,7 +36,7 @@ public class Circle {
 	
 	public double area() {
 		if (radius > 0) {
-		double area = Math.PI * radius * radius;
+		 area = Math.PI * radius * radius;
 	}
 		else {
 			System.out.println("bad data");
