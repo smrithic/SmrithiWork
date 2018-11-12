@@ -44,5 +44,6 @@ while (testScore != 9999) {
 
 	}
 }
+input.close();
 	}
 }
