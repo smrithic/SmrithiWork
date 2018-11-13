@@ -9,9 +9,9 @@ RightTriangle triangle = new RightTriangle (5.0, 6.0);
 shape.area();
 shape.base();
 shape.height();
-shape.hypote();
+shape.hypote1();
 shape.perimeter();
-System.out.println(shape.hypote());
+System.out.println(shape.hypote1());
 System.out.println(shape.perimeter());
 System.out.println(shape.area());
 	}

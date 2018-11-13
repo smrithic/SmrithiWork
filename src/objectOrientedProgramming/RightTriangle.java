@@ -19,8 +19,14 @@ public class RightTriangle {
 	public double height() {
 		return height;
 	}
+	public void setBase(double baseNew) {
+		base = baseNew;
+	}
+	public void setHeight(double heightNew) {
+		height = heightNew;
+	}
 
-	public double hypote() {
+	public double hypote1() {
 		double hypote = 0.0;
 		double squared = 0.0;
 		squared = (base * base) + (height * height);
@@ -28,10 +34,14 @@ public class RightTriangle {
 		return hypote;
 
 	}
+	
+	public void setHypote (double hypoteNew) {
+		double hypote = hypoteNew;
+	}
 
 	public double perimeter() {
 		double perimeter;
-		perimeter = base + height + hypote();
+		perimeter = base + height + hypote1();
 		return perimeter;
 	}
 
