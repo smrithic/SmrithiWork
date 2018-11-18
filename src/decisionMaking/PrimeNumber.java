@@ -21,7 +21,7 @@ public class PrimeNumber {
 			}
 		}
 		
-		System.out.println("The number is " + (primeNumber ? "" : "not") + "a prime");
+		System.out.println("The number is " + (primeNumber ? "" : "not") + " a prime");
 		input.close();
 	}
 
