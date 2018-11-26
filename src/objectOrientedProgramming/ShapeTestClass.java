@@ -28,9 +28,6 @@ public class ShapeTestClass {
 		System.out.println("What is the radius of the circle?");
 		radius = input.nextDouble();	
 		Circle jeff = new Circle(radius);
-		area2 = jeff.getArea();
-		perimeter2 = jeff.getCircumference();
-		System.out.println("The circumference of the circle is " +perimeter2 + " and the area is " +area2);
 		
 		
 		double base = 0.0;

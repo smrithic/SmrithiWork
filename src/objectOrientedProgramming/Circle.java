@@ -17,20 +17,31 @@ public class Circle {
 	}
 
 	public double getRadius() {
-		return area;
+		return radius;
 	}
 
-	public double getCircumference() {
-		circumference = 2 * radius * Math.PI;
-		return circumference;
+	public void setRadius(double newR) {
+		radius = newR;
 	}
-	public double getArea() {
-		area = radius * radius * Math.PI;
-		return area;
+	public double circumference() {
+		if (radius > 0) {
+		 circumference = 2 * radius * Math.PI;
+		}
+		else {
+			System.out.println("Bad data");
+		}
+		return circumference;
+
 	}
 	
-	public void changeRadius(double newR) {
-		radius = newR;
+	public double area() {
+		if (radius > 0) {
+		 area = Math.PI * radius * radius;
+	}
+		else {
+			System.out.println("bad data");
+		}
+		return area;
 	}
 	
 

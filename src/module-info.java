@@ -6,4 +6,5 @@
  *
  */
 module SmrithiWork {
+	requires jdk.compiler;
 }
