@@ -16,8 +16,7 @@ public class RollADie {
 		max = input.nextInt();
 		
 		int randomNum = 0;
-		int headcount = 0;
-		int tailcount = 0;
+		
 		
 		System.out.println("How many times do you want to roll?");
 		int rolls = input.nextInt();
