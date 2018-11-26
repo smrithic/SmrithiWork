@@ -13,7 +13,7 @@ int tailcount = 0;
 for (int i = 1; i <= 87; i++) {
 
 	randomNum = min + generator.nextInt(max - min + 1);
-	if (randomNum == 3 || randomNum == 6 || randomNum == 9 || randomNum == 12) {
+	if (randomNum % 3 ==0) {
 		headcount++;
 	} else {
 		tailcount++;
