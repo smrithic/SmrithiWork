@@ -8,7 +8,7 @@ public class RollADie {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		Random generator = new Random();
+		Random generator = new Random(5);
 		
 		int min = 1;
 		int max = 0;
@@ -16,8 +16,6 @@ public class RollADie {
 		max = input.nextInt();
 		
 		int randomNum = 0;
-		
-		
 		System.out.println("How many times do you want to roll?");
 		int rolls = input.nextInt();
 		for (int i = 1; i <= rolls; i++) {
