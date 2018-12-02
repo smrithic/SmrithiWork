@@ -19,16 +19,24 @@ public class NumberOfWords {
 			wordCount = 0;
 			System.out.println("Please enter a sentence");
 			String sentence = input.nextLine();
+			
 			do {
-				wordCount++;
 				nextSpaceIdx = sentence.indexOf(" ", startIdx);
 				if (nextSpaceIdx == -1) {
-					System.out.println(sentence.substring(startIdx));
+					if (!sentence.substring(startIdx).isEmpty()) {
+						System.out.println(sentence.substring(startIdx));
+						wordCount++;
+					}
 					complete = true;
 				} else {
-					System.out.println(sentence.substring(startIdx, nextSpaceIdx));
+					if (!sentence.substring(startIdx, nextSpaceIdx).isEmpty()) {
+						System.out.println(sentence.substring(startIdx, nextSpaceIdx));
+						wordCount++;
+						//System.out.println(sentence.substring(startIdx, nextSpaceIdx).matches("^[a-zA-Z]*$"));
+					}
 				}
 				startIdx = nextSpaceIdx + 1;
+				
 			} while (!complete);
 			System.out.println("Number of words: " + wordCount);
 			System.out.println("Do you want to enter another sentence? Y/N");
