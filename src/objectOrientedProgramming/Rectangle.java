@@ -3,31 +3,39 @@ package objectOrientedProgramming;
 public class Rectangle {
 	private double length;
 	private double width;
-	private double perimeter;
-	private double area;
 
 	public Rectangle() {
-		
-	}
-	public Rectangle (double newLe, double newWi) {
-		length = newLe;
-		width = newWi;	
+		length = 10;
+		width = 5;
 	}
 
-	public double getLength(){
+	public Rectangle(double xLength, double xWidth) {
+		length = xLength;
+		width = xWidth;
+	}
+
+	public double getLength() {
 		return length;
 	}
 
 	public double getWidth() {
 		return width;
 	}
-	public double getPerimeter() {
-		perimeter = (length * 2) + (width * 2);
-		return perimeter;
+
+	public double perimeter() {
+		return 2 * length * width;
 	}
-	public double getArea() {
-		area = length * width;
-		return area;
+
+	public double area() {
+		return length * width;
 	}
-	
+
+	public void setLength(double xLength) {
+		length = xLength;
+	}
+
+	public void setWidth(double xWidth) {
+		width = xWidth;
+	}
+
 }
