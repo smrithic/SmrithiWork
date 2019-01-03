@@ -2,7 +2,6 @@ package arrays;
 
 import java.util.Random;
 
-import objectOrientedProgramming.Circle;
 import objectOrientedProgramming.Rectangle;
 
 public class AfterBreak2 {
