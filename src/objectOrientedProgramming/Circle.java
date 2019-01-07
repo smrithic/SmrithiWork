@@ -2,47 +2,35 @@ package objectOrientedProgramming;
 
 public class Circle {
 	private double radius;
-	private double circumference;
-	private double area;
-	
 
 	public Circle() {
-		
-
+		radius = -99;
 	}
-	
-	public Circle(double newR) {
-		radius = newR;
-		
+
+	public Circle(double xRadius) {
+		radius = xRadius;
 	}
 
 	public double getRadius() {
 		return radius;
 	}
 
-	public void setRadius(double newR) {
-		radius = newR;
-	}
 	public double circumference() {
 		if (radius > 0) {
-		 circumference = 2 * radius * Math.PI;
+			return 2 * radius * Math.PI;
 		}
-		else {
-			System.out.println("Bad data");
-		}
-		return circumference;
-
+		return radius;
 	}
-	
+
 	public double area() {
 		if (radius > 0) {
-		 area = Math.PI * radius * radius;
-	}
-		else {
-			System.out.println("bad data");
+			return Math.PI * radius * radius;
 		}
-		return area;
+		return radius;
 	}
-	
+
+	public void setRadius(double xRadius) {
+		radius = xRadius;
+	}
 
 }
