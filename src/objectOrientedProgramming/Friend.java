@@ -18,5 +18,8 @@ public class Friend {
 	{
 		System.out.println("You are a great friend");
 	}
+	public String getName() {
+		return name;
+	}
 	
 }
