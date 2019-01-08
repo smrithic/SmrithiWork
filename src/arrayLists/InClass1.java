@@ -14,12 +14,11 @@ public class InClass1 {
 		String name = input.nextLine();
 
 		ArrayList<String> people = new ArrayList<String>();
-		people.add("Bob");
-		people.add("Jane");
-		people.add(1, "Billy");
+		people.add("Bob Smith");
+		people.add("Jane Miller");
+		people.add(0, "Billy Jones");
 		people.add(name);
-		people.remove(0);
-		people.remove(people.size() - 1);
+		people.remove(1);
 		for (int i = 0; i < people.size(); i++) {
 			System.out.println(people.get(i));
 		}
