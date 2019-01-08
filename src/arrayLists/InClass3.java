@@ -18,7 +18,7 @@ public class InClass3 {
 			shape.add(new Rectangle(randomNum, randomNum));
 		}
 		square = shape.remove(shape.size() - 1);
-		shape.add(0, square);
+		shape.set(0, square);
 
 		for (int i = 0; i < shape.size(); i++) {
 			System.out.println(shape.get(i).area());
