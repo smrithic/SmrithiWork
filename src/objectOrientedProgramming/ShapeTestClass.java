@@ -17,9 +17,6 @@ public class ShapeTestClass {
 		System.out.println("What is the width of the rectangle?");
 		width = input.nextDouble();
 		Rectangle bob = new Rectangle(length, width);
-		perimeter1 = bob.getPerimeter();
-		area1 = bob.getArea();
-		System.out.println("The area of the rectangle is " +area1+ " and the perimeter is " +perimeter1);
 		
 		
 		double radius = 0.0;

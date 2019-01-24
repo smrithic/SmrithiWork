@@ -6,6 +6,9 @@ public class Greeter {
 	public Greeter() {
 		age = -999;
 	}
+	public Greeter(int xage) {
+		xage = age;
+	}
 
 	public int getAge() {
 		return age;
