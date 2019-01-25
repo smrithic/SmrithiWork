@@ -11,15 +11,15 @@ public class JunkTest {
 		ArrayList<PIleOJunk> people = new ArrayList<PIleOJunk>();
 		System.out.println("How many 'pile of junk' objects do you want to construct?");
 		int num = input.nextInt();
-		
+
 		for (int i = 0; i < num; i++) {
 			people.add(new PIleOJunk());
 		}
-	
+
 		for (PIleOJunk temp : people) {
 			System.out.println(temp.displayInfo());
 		}
-		
+
 		System.out.println("Please enter two values to sum");
 		int num1 = input.nextInt();
 		int num2 = input.nextInt();
