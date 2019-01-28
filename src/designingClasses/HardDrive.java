@@ -23,12 +23,15 @@ public class HardDrive {
 		fileSize = xfileSize;
 	}
 
-	public void addFile() {
+	public void addFile(int xfileSize) {
+		fileSize = xfileSize;
 		file.add(fileSize);
+		freeSpace-=fileSize;
 	}
 
-	public void deleteFile() {
+	public void deleteFile(int xnumFile) {
 		int numFile = 0;
+		numFile = xnumFile;
 		file.remove(numFile);
 	}
 
