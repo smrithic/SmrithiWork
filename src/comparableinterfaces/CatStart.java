@@ -1,6 +1,6 @@
 package comparableinterfaces;
 
-public class CatStart {
+public class CatStart implements Comparable<CatStart> {
 	private int age;
 	private int sleep;
 
@@ -49,5 +49,12 @@ public class CatStart {
 	public void sleepless()
 	{
 	sleep--;
+	}
+	public int compareTo(CatStart xPerson) {
+		if (Math.abs(age - xPerson.getAge()) < 0.0001)
+			return 0;
+		if (age < xPerson.getAge())
+			return -1;
+		return 1;
 	}
 }
