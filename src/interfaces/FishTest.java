@@ -9,7 +9,7 @@ public class FishTest {
 
 		double oldest = 0;
 		double longest = 0;
-		String color = "red";
+		String color = "";
 		double numScales = 0;
 		String fishinfo = "";
 		ArrayList<Fish> sea = new ArrayList<Fish>();
@@ -25,6 +25,7 @@ public class FishTest {
 			}
 		}
 		System.out.println("Longest Fish info: " + fishinfo);
+		
 		for (Fish g : sea) {
 			if (g instanceof Goldfish) {
 				Goldfish fish3 = (Goldfish) g;
