@@ -19,13 +19,12 @@ public class Outfit implements ClothingItem {
 	}
 
 	public double getPrice() {
-		if(outfit.getPrice() > 100) {
-			price = 0.75 * outfit.getPrice();
-			return price;
+		double pprice = pants.getPrice();
+		double sprice = shoes.getPrice();
+		double tprice = top.getPrice();
+		if (sprice + tprice >= 100 || sprice + pprice >= 100 || pprice + tprice >= 100) {
+			return (0.75 * (sprice + tprice + pprice));
 		}
-		else {
-			price = 0.9 * outfit.getPrice();
-			return price;
-		}
+		return (0.9 * (pprice + tprice + sprice));
 	}
 }
